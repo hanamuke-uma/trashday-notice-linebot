@@ -20,7 +20,7 @@ function notice(){
   if(values[getKind()][1] == '収集なし'){
     messages = [{'type': 'text', 'text': '今日の収集はありません'}];
   }else{
-    messages = [{"type": "template", "altText": "this is a confirm message", "template": {"type": "buttons", "text": "今日は"+ values[getKind()][1] +"ごみの日です．出しましたか？", "actions": [{"type": "postback", "label": "はい", "data": "yes", "displayText": "はい"}, {"type": "postback", "label": "いいえ", "data": "no", "displayText": "いいえ"}]}}];
+    messages = [{"type": "template", "altText": "今日は"+ values[getKind()][1] +"ごみの日です．出しましたか？", "template": {"type": "buttons", "text": "今日は"+ values[getKind()][1] +"ごみの日です．出しましたか？", "actions": [{"type": "postback", "label": "はい", "data": "yes", "displayText": "はい"}, {"type": "postback", "label": "いいえ", "data": "no", "displayText": "いいえ"}]}}];
   }
   
   //送る動作
